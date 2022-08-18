@@ -4,7 +4,7 @@ Many recent speech separation challenges require frame-online processing with a 
 
 For example, the [Clarity challenge](https://claritychallenge.org/docs/cec2/taking_part/cec2_rules#computational-restrictions) requires that, to obtain the separation result at the current sample, the separation model cannot use information >= 5 ms into the future.
 
-Simiar constraint can be found in the recent [DNS challenges](https://www.microsoft.com/en-us/research/academic-program/deep-noise-suppression-challenge-icassp-2022/).
+Similar constraint can be found in the recent [DNS challenges](https://www.microsoft.com/en-us/research/academic-program/deep-noise-suppression-challenge-icassp-2022/).
 
 Such constraints are often unconsciously violated by challenge participants, resulting in unfair rankings and misleading comparison among different submissions.
 
