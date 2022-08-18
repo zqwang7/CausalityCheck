@@ -24,6 +24,7 @@ def check_causality(model, sr=16000, algo_lat=0.005):
         sig[p:] = np.nan
 
         est_sig = model(sig) # obtain separation results using your model
+        assert est_sig.shape == sig.shape
 
         if p-algo_lat+1 >= 1 and np.sum(np.isnan(est_sig[:p-algo_lat+1])) > 0:
             print('For example %d, your model does NOT satisfy the algorithmic latency requirement!'%r)
