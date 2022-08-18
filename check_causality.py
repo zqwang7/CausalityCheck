@@ -6,6 +6,9 @@ def check_causality(model, sr=16000, algo_lat=0.005):
     :param model: your DNN model in Torch, Tensorflow, etc.
     :param sr: sampling rate in Hz
     :param algo_lat: allowed algorithmic latency in seconds
+
+    The idea is that we set samples starting from a random position to NaN,
+        and the DNN model peeks the NaNs would output NaNs.
     """ 
 
     algo_lat = int(algo_lat*sr)
