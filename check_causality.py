@@ -8,7 +8,7 @@ def check_causality(model, sr=16000, algo_lat=0.005):
     :param algo_lat: allowed algorithmic latency in seconds
 
     The idea is that we set the samples starting from a random position to NaN,
-        and the DNN model peeks the NaNs would output NaNs.
+        and the DNN model that peeks the NaNs would output NaNs.
     """ 
 
     algo_lat = int(algo_lat*sr)
