@@ -13,12 +13,16 @@ This code provides one example to verify whether a separation model peeks future
 ## Citations
 
 ```
-@inproceedings{Wang2022,
-author = {Wang, Zhong-Qiu and Wichern, Gordon and {Le Roux}, Jonathan and Watanabe, Shinji},
-booktitle = {arXiv preprint arXiv:2204.09911},
+@article{Wang2023STFTLowAlgoLat,
+archivePrefix = {arXiv},
+arxivId = {2204.09911},
+author = {Wang, Zhong-Qiu and Wichern, Gordon and Watanabe, Shinji and {Le Roux}, Jonathan},
+eprint = {2204.09911},
+journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+pages = {397--410},
 title = {{STFT-Domain Neural Speech Enhancement with Very Low Algorithmic Latency}},
-year = {2022}
-url={https://arxiv.org/abs/2204.09911}
+url = {http://arxiv.org/abs/2204.09911},
+volume = {31},
+year = {2023}
 }
-
 ```
